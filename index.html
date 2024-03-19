@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <img src="/logo.png" alt="logo Alura" class="logoAlura">
+        </div>
+    </header>
+    <main class="contenido-principal">
+        <section class="section-principal">
+          
+                <section class="section-texto">
+                    <div id="texto-encriptado">
+                        <textarea id="campoTexto" class="campo-texto" placeholder="click aquí para escribir" cols="30" rows="10" onkeypress="return check(event)"></textarea>
+                    </div>
+                    
+                <div id="info">
+                    <h6 class="informacion">Solo letras en minúsculas y sin acentos</h6>
+                </div>
+                <div class="botones">
+                    <button class="boton-encriptar" onclick="botonEncriptar()">Encriptar</button>
+                    <button class="boton-desencriptar" onclick="botonDesecriptar()">Desencriptar</button>
+                </div>
+            </section>
+            <section class="section-mensaje">
+                <div id="texto-desencriptado">
+                    <textarea id="texto-mensaje" class="campo-mensaje" placeholder="Texto desencriptado" cols="30" rows="10"></textarea> 
+
+                </div>
+                <div class="boton-copiar" >
+                    <button id="copiarTexto" class="copiar" onclick="copiar()">copiar texto</button>
+                </div>
+                
+            </section>
+        </main>
+        <footer>
+            <p class="pieDePagina"> Santiago Alvarez Arias, Challenge Alura  </p>
+        </footer>
+        
+        
+    <script src="script.js"></script>
+</body>
+</html>

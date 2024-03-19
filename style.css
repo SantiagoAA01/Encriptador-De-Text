@@ -1,0 +1,259 @@
+*{
+    color: black;
+    position: static;
+    font-family: "inter";
+    font-weight: 300;
+    font-size: clamp(1em, 2vw, 4em);
+    line-height: 150%;
+    width: auto;
+    height: auto;
+    background-color: #f5f5f1;
+    
+}
+header{
+    margin: none;
+}
+.encabezado{
+    width: 65%;
+    height: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background: #9c9c9c;
+    border-radius: 20px;
+}
+.logoAlura{
+    align-items: center;
+    background: transparent;
+    height: 100px;
+    margin: 3px;
+}
+
+main{
+    align-items:center;
+    display:flex;
+    width: auto;
+    height: auto;
+    margin:auto;
+    flex-direction: row;
+    
+}
+.contenido-principal{
+    align-items:center;
+    justify-content: space-around;
+}
+.section-principal{
+    width: auto;
+    display: flex;
+    margin: 0%;
+}
+.section-texto, .section-mensaje{
+    width: auto;
+    height: auto;
+    margin: 2px;
+    padding: 1%;
+}
+#texto-encriptado,#texto-desencriptado{
+    width: auto;
+    padding: 5px;
+}
+
+.campo-texto{
+    height: 98%;
+    width: 98%;
+    border: none;
+    text-transform: lowercase;
+    padding: 2px;
+    border-radius: 20px;
+    border: 2px solid #000;
+    
+    }
+.campo-texto:hover{
+    border-color: #000;
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 0px 20px 1px;
+    
+}
+::placeholder{ color: black;}
+.campo-texto:focus{
+    outline: none;
+}
+.campo-mensaje{
+    height: 98%;
+    width: 98%;
+    border:#9900ff;
+    text-transform: lowercase; 
+    padding: 2px ;
+    background: #9900ff;
+    border-radius: 20px;
+   
+}
+.campo-mensaje:hover{
+    border-color: #9900ff;
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 0px 20px 1px;
+}
+.campo-mensaje:focus{
+    outline: none;
+}
+.informacion{
+    color: #000900;
+    font-size: 18px;
+    font-style: italic;
+    margin: 3px;
+    margin-left: 18px;
+}
+.botones{
+    display: flex;
+    padding-top: 5px;   
+    justify-content: center; 
+}
+
+.boton-encriptar{
+    background-color: #9900ff;
+    border: 2px, solid, black;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    height: 70px;
+    width: 330px;
+    margin-right: 2px;
+    transition: all 500ms ease-in-out;
+}
+.boton-encriptar:hover {
+    color: black;
+    background-color: #39f9f9;
+}
+.boton-desencriptar{
+    background: white;
+    border: 1px, solid, black;
+    border-radius: 20px;
+    color: black;
+    cursor: pointer;
+    height: 70px;
+    width: 330px;
+    transition: all 500ms ease-in-out;
+}
+.boton-desencriptar:hover, .copiar:hover{
+    color: white;
+    background-color: #000000;
+    box-shadow: 0 0 5px black;
+}
+.boton-copiar{
+    margin: 0 5px;
+    width: 98%;
+    margin-bottom: 10px;
+    justify-content: baseline;
+}
+.copiar{
+    background: white;
+    border: 1px, solid, black;
+    border-radius: 20px;
+    color: black;
+    cursor: pointer;
+    height: 80px;
+    width: 98%;
+    transition: all 500ms ease-in-out;  
+    z-index: 0;
+}
+.pieDePagina{
+    width: 65%;
+    height: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background: #9c9c9c;
+    border-radius: 20px;
+}
+main,textarea{
+    font-weight:700; 
+       
+}@media screen and (max-width: 375px){
+    .botones{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    .boton-encriptar,.boton-desencriptar{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .encabezado{
+        width: auto;
+    }
+    img,.logoAlura{
+        width: auto;
+        height: 100px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    main{
+        align-items: center;
+        display: flex;
+        justify-content: left;
+        padding-top: 0%;
+    }
+    .section-principal{
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .section-texto, .section-mensaje{
+        width: auto;
+    }
+    textarea,.campo-texto,.campo-mensaje{
+        width: 98%;
+        height: 80%;
+    }
+    .botones{
+        max-width: 98%;
+        justify-content: center;
+    }
+    .boton-copiar{
+        max-width: 98%;
+    }
+    .pieDePagina{
+        width: auto;
+        text-align: center;
+    }
+    @media screen and (min-width: 1001) {
+        .encabezado, .pieDePagina{
+            width: auto;
+            height: auto;
+        }
+        img,.logoAlura{
+            width: auto;
+            height: 100px;
+            align-items: center;
+            justify-content: space-around;
+        }
+        main{
+            width: auto;
+        }
+        .section-principal{
+            width: 98%;
+            height: auto;
+            padding: 2%;
+        }
+        .section-texto,.section-mensaje{
+            width:auto;
+            height: auto;
+            display: flex;
+            padding: 5px;
+        }
+        .botones{
+            width: 98%;
+        }
+        
+        .campo-mensaje{
+            padding: 5px;
+        }
+        
+    }
+}
+
