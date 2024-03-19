@@ -1,3 +1,3 @@
 <h1> Encriptador de texto</h1>
-<img width="500px" heigth="400px" src="./IMG/Img-encriptador.png">
+<img width="600px" heigth="500px" src="./IMG/Img-encriptador.png">
 
